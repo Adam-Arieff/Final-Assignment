@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paraglider</title>
+</head>
+<style>
+    footer{
+			font-family: 'Montserrat', sans-serif;
+			color: black;
+			text-align: center;
+            margin-top: auto;
+			
+		}
+
+        table, th, td {
+        border: 1px solid black;
+        border-radius: 10px;
+      }
+      th, td{
+			text-align: left;
+			padding: 8px;
+			border: 1px solid;
+		}
+		tr{
+			background-color: lightgreen;
+		}
+		tr:hover{
+			background-color: orange;
+		}
+</style>
+<body style="background-image: url('file:///C:/Users/Adam%20Arieff/Downloads/paraglider.jpg');"
+background-size: cover>
+
+    
+
+    <header>
+        <marquee direction="right"><h1>Welcome To The Safe Paragliding Experience<br></h1></marquee></p>
+    </header>
+
+    
+
+    <table>
+        <tr>
+            <th>Days</th>
+            <th>Time</th>
+        </tr>
+
+        <tr>
+            <td>Monday - Thursday</td>		<!--creating table-->
+            <td>4:00 am - 7:00 pm</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>5:00 am - 7:00 pm</td>
+        </tr>
+        <tr>
+            <td>Saturday, Sunday and Public Holidays</td>
+            <td>12:00 pm - 7:00 pm</td>
+        </tr>
+    </table>
+
+    <main>
+    
+        <p>Type the name of a place to find out the weather conditions</p>
+    
+        <form method="POST" id="weatherForm">
+    
+            <input type="text" id="name" placeholder="City Name" />
+    
+            <input id="postSubmit" type="submit" value="Submit" />
+    
+        </form>
+        
+    
+    </main>
+    
+    <script src="test.js"></script>
+    
+    </body>
+    <h4>
+    <footer>
+        <p id="greet"></p><br>
+        <p id="masa"></p>
+        <button type="button" 
+        onclick="window.open('', '_self', ''); window.close();">Exit</button>
+    
+        <script>
+            var name = prompt("To get started, please enter your name", "")
+            document.getElementById("greet").innerHTML = "Welcome "+name +'!'
+    
+            const m = new Date();
+            document.getElementById("masa").innerHTML = m;
+
+            
+        </script>
+    </footer>
+    </h4>
+    
+</html>
